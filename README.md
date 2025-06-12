@@ -1,12 +1,12 @@
 # Laporan Recommender System Project - Margareth Serepine
 ## **Project Overview**
-Pandemi Covid-19 pada tahun 2021 memicu lonjakan besar dalam penggunaan MOOC (Massive Open Online Courses). Dengan melimpahnya kursus online dari berbagai institusi dan platform, banyak pelajar mengalami kesulitan dalam menghadapi tantangan dalam menemukan kursus yang paling sesuai dengan kebutuhan dan tingkat keterampilan mereka. 
+Pandemi Covid-19 pada tahun 2021 memicu lonjakan besar dalam penggunaan MOOC (Massive Open Online Courses). Dengan melimpahnya kursus online dari berbagai institusi dan platform, banyak pelajar mengalami kesulitan dalam menghadapi tantangan dalam menemukan kursus yang paling sesuai dengan kebutuhan dan tingkat keterampilan mereka. <br>
 
-Menurut penelitian Hew et al. (2020), retensi pelajar dalam MOOC dapat diprediksi menggunakan algoritma machine learning, yang mengindikasikan adanya pola perilaku pengguna yang dapat dimanfaatkan untuk memberikan rekomendasi pembelajaran yang lebih personal dan relevan. Di sisi lain, Jordan (2015) melaporkan bahwa rata-rata tingkat penyelesaian kursus MOOC sangat rendah, berkisar antara 5–15%, yang menyoroti pentingnya keterlibatan dan kecocokan kursus dengan minat serta kemampuan peserta.
+Menurut penelitian Hew et al. (2020), retensi pelajar dalam MOOC dapat diprediksi menggunakan algoritma machine learning, yang mengindikasikan adanya pola perilaku pengguna yang dapat dimanfaatkan untuk memberikan rekomendasi pembelajaran yang lebih personal dan relevan. Di sisi lain, Jordan (2015) melaporkan bahwa rata-rata tingkat penyelesaian kursus MOOC sangat rendah, berkisar antara 5–15%, yang menyoroti pentingnya keterlibatan dan kecocokan kursus dengan minat serta kemampuan peserta. <br>
 
-Menanggapi tantangan ini, Khalil dan Ebner (2014) menunjukkan bahwa sistem rekomendasi mampu meningkatkan pengalaman pengguna dalam platform MOOC dengan menyediakan konten yang lebih sesuai dengan preferensi dan kebutuhan individu. 
+Menanggapi tantangan ini, Khalil dan Ebner (2014) menunjukkan bahwa sistem rekomendasi mampu meningkatkan pengalaman pengguna dalam platform MOOC dengan menyediakan konten yang lebih sesuai dengan preferensi dan kebutuhan individu. <br>
 
-Oleh karena itu, penerapan sistem rekomendasi berbasis machine learning dalam konteks pendidikan daring tidak hanya relevan, tetapi juga sangat krusial untuk meningkatkan efektivitas pembelajaran, retensi pengguna, dan keberhasilan penyelesaian kursus. Sistem rekomendasi ini akan membantu pengguna memilih kursus dengan cara yang lebih personal dan efisien, terutama berdasarkan informasi deskripsi kursus, keterampilan, dan tingkat kesulitan.
+Oleh karena itu, penerapan sistem rekomendasi berbasis machine learning dalam konteks pendidikan daring tidak hanya relevan, tetapi juga sangat krusial untuk meningkatkan efektivitas pembelajaran, retensi pengguna, dan keberhasilan penyelesaian kursus. Sistem rekomendasi ini akan membantu pengguna memilih kursus dengan cara yang lebih personal dan efisien, terutama berdasarkan informasi deskripsi kursus, keterampilan, dan tingkat kesulitan. <br>
 
 **Referensi:** <br>
 [1]K. F. Hew, X. Hu, C. Qiao, dan Y. Tang, “Predicting learners' retention in MOOCs using machine learning,” Computers & Education, vol. 151, p. 104597, 2020. [[Online]](https://doi.org/10.1016/j.compedu.2020.104597) <br>
@@ -30,7 +30,7 @@ Oleh karena itu, penerapan sistem rekomendasi berbasis machine learning dalam ko
 ### Dataset
 Proyek ini menggunakan dataset "Coursera Courses Dataset 2021" yang berasal dari Kaggle dan dapat diakses melalui [Link Berikut](https://www.kaggle.com/datasets/khusheekapoor/coursera-courses-dataset-2021).
 
-Dataset ini berisi informasi tentang nama kursus, universitas penyedia kursus, tingkat kesulitan, deskripsi dan penjelasan lainnya mengenai kursus yang disediakan. Dataset ini dapat digunakan dalam sistem rekomendasi untuk mempromosikan kursus Coursera berdasarkan tingkat Kesulitan dan keterampilan yang dibutuhkan.
+Dataset ini berisi informasi tentang nama kursus, universitas penyedia kursus, tingkat kesulitan, deskripsi dan penjelasan lainnya mengenai kursus yang disediakan. Dataset ini dapat digunakan dalam sistem rekomendasi untuk mempromosikan kursus Coursera berdasarkan tingkat Kesulitan dan keterampilan yang dibutuhkan. <br>
 
 Dataset ini terdiri dari 3.522 baris dan 7 kolom . 
 - 3.522 baris (rows): merepresentasikan kursus yang tersedia di platform Coursera.
@@ -49,10 +49,10 @@ Adapun fitur (kolom) yang terdapat pada dataset ini, yaitu:
 Dataset ini semula tidak memiliki missing value secara eksplisit, namun terdapat keterangan dimana nilai seperti "Not Calibrated" dianggap sebagai missing value.
 
 ### Data Checking 
-- Check Missing Value : Mengecek nilai yang hilang (kosong). Melalui pengecekan data secara normal tanpa mengubah nilai apapun, dideteksi tidak ada data yang hilang atau memiliki nilai yang kosong. Namun karena pada dataset sudah terdapat keterangan bahwa  "Not Calibrated" dianggap sebagai nilai yang hilang. Melalui tahap ini dicek berapa total data yang memiliki nilai "Not Calibrated". 
+- Check Missing Value : Mengecek nilai yang hilang (kosong). Melalui pengecekan data secara normal tanpa mengubah nilai apapun, dideteksi tidak ada data yang hilang atau memiliki nilai yang kosong. Namun karena pada dataset sudah terdapat keterangan bahwa  "Not Calibrated" dianggap sebagai nilai yang hilang. Melalui tahap ini dicek berapa total data yang memiliki nilai "Not Calibrated". <br>
 Banyak data yang memiliki nilai "Not Calibrated" diantaranya:
-    1. 50 nilai "Not Calibrated" pada kolom "Difficulty Level" 
-    2. 82 nilai "Not Calibrated" pada Kolom "Course Rating" 
+  - 50 nilai "Not Calibrated" pada kolom "Difficulty Level"
+  - 82 nilai "Not Calibrated" pada Kolom "Course Rating" 
 - Check Duplicates : Mengecek baris yang duplikat. Melalui pengecekan data, terdapat ada 98 baris data yang terdeteksi sebagai duplikat.
 
 ### Univariate Exploratory Data Analysis
@@ -62,7 +62,7 @@ Melalui tahap ini, dilakukan analisis visualisasi dari beberapa fitur yang dibut
 ![Visualisasi Course Rating](course_rating.png)
 
 Distribusi hasil :
- * Dominasi Rating Positif : Rating 4.7, 4.6, dan 4.8 merupakan yang nilai yang paling sering muncul, masing-masing dengan jumlah kursus lebih dari 600. Hal ini mencerminkan bahwa mayoritas kursus memiliki tingkat kepuasan pengguna yang sangat tinggi. Platform kemungkinan besar berhasil mempertahankan standar kualitas yang baik dalam penyediaan kursus.
+* Dominasi Rating Positif : Rating 4.7, 4.6, dan 4.8 merupakan yang nilai yang paling sering muncul, masing-masing dengan jumlah kursus lebih dari 600. Hal ini mencerminkan bahwa mayoritas kursus memiliki tingkat kepuasan pengguna yang sangat tinggi. Platform kemungkinan besar berhasil mempertahankan standar kualitas yang baik dalam penyediaan kursus.
 * Minimnya Kursus dengan Rating Rendah : Kursus dengan rating di bawah 4.0 jumlahnya sangat sedikit dibandingkan dengan kursus yang memiliki rating tinggi. Menunjukkan bahwa kursus dengan kualitas rendah mungkin sudah dihapus, atau pengguna memang jarang memilih kursus yang tidak populer.
 * Nilai "Not Calibrated" : Sebanyak 82 data yang memiliki label "Not Calibrated" yang artinya tidak memiliki rating. Dimana data ini secara khusus akan diganti nilainya menjadi NaN supaya dapat terdeteksi menjadi nilai yang kosong.
 * Distribusi Miring Positif (Right Skewed) : Distribusi data condong ke rating tinggi yang artinya sebagian besar kursus dinilai sangat baik, sementara hanya sedikit yang mendapat rating rendah.
@@ -91,11 +91,12 @@ Beberapa teknik data preparation yang dilakukan adalah:
 - Penanganan Missing Value pada Fitur Course Rating : Untuk mengatasi missing value pada kolom Course Rating dilakukan pengubahan nilai, yaitu mengganti nilai yang dideteksi sebagai missing value menggunakan nilai median dari seluruh data pada kolom tersebut.
 - Penanganan Missing Value pada Fitur Difficulty Level : Untuk mengatasi missing value pada kolom Difficulty Level dilakukan pengubahan nilai yaitu mengganti missing value menggunakan nilai modus (mode) dari kolom tersebut karena nilai yang paling sering muncul (modus) mewakili sebagian besar data, sehingga aman digunakan sebagai pengganti nilai yang hilang.
 - Menghapus Data Duplikat : Menghapus semua data yang terdeteksi duplikat
-- Menghapus Karakter Khusus : Menghapus atau mengganti karakter-karakter khusus pada kolom teks dengan spasi, agar teks lebih bersih dan mudah diproses lebih lanjut untuk pemodelan.
+- Menghapus Karakter Khusus : Menghapus atau mengganti karakter-karakter khusus non-alfabet seperti tanda baca pada kolom Course Name, Course Description, dan Skills, menjadi string kosong ('') menggunakan ekspresi reguler (regex) agar hasil representasi teks menjadi lebih bersih  agar teks lebih bersih dan mudah diproses lebih lanjut untuk pemodelan.
 
 ### Text Feature Transformation
-- Fitur Gabungan Representasi Teks : Menggabungkan beberapa kolom seperti Course Name, Course Description, Skills, dan Difficulty Level ke dalam satu kolom baru bernama Final Col yang akan digunakan sebagai fitur input pada sistem rekomendasi berbasis content-based filtering.
-- Ekstraksi Fitur Teks : Mengonversi kolom Final Col menjadi fitur numerik berbobot menggunakan TF-IDF untuk memungkinkan pemodelan kemiripan antar kursus berdasarkan deskripsi, nama, skill, dan tingkat kesulitan.
+- Fitur Gabungan Representasi Teks : Menggabungkan beberapa kolom seperti Course Name, Course Description, Skills, dan Difficulty Level ke dalam satu kolom baru bernama 'Final Col' yang akan digunakan sebagai fitur input pada sistem rekomendasi berbasis content-based filtering dengan tujuan untuk mengintegrasikan informasi penting dari berbagai fitur menjadi satu representasi teks utuh yang akan digunakan sebagai dasar sistem rekomendasi berbasis konten.
+- Penanganan Nilai Kosong: Sebelum mengekstraksi fitur teks, nilai kosong pada kolom Final Col diisi dengan string kosong ('') menggunakan fungsi .fillna(''). Langkah ini penting untuk mencegah error saat proses transformasi TF-IDF dan memastikan semua baris memiliki representasi teks, meskipun kosong.
+- Ekstraksi Fitur Teks (TF-IDF) : Mengonversi kolom 'Final Col' menjadi vektor numerik menggunakan metode TF-IDF (Term Frequency - Inverse Document Frequency) untuk memberikan bobot terhadap kata-kata yang lebih unik dan penting dalam setiap kursus dibandingkan dengan kata-kata umum serta menghasilkan matriks representasi numerik yang akan digunakan untuk menghitung kemiripan antar kursus.
 
 ## **Modeling**
 ### Similarity Calculation
@@ -107,7 +108,12 @@ Membuat pemetaan antara 'Course Name' dengan indeks baris dalam DataFrame. untuk
 ### Course Recommendation
 Menghasilkan rekomendasi kursus berdasarkan kursus yang dipilih pengguna deengan memanfaatkan matriks kesamaan kosinus (cosine_sim_matrix) untuk mencari kursus-kursus lain yang paling mirip berdasarkan konten deskriptif yang sudah ditransformasikan ke dalam bentuk numerik dengan TF-IDF. 
 
-Seperti pada contoh `get_recommendations('Finance for Managers')` :  Memberikan saran kursus yang relevan berdasarkan isi materi dan kesamaan fitur deskriptifnya, misalnya argumen Finance for Managers, yang berarti merekomendasikan kursus lain yang mirip dengan kursus berjudul Finance for Managers, berdasarkan kemiripan konten yang dihitung menggunakan cosine similarity,berdasarkan fitur gabungan di kolom Final Col.
+### Top 5 Recommendation
+Sistem rekomendasi ini mengimplementasikan fungsi get_recommendations yang menerima input berupa judul kursus dan mengembalikan daftar lima kursus teratas yang paling relevan berdasarkan skor kemiripan kontennya. Proses dilakukan dengan mengambil vektor dari kursus yang dipilih, menghitung skor kemiripan terhadap seluruh kursus lain, mengurutkannya, dan menampilkan lima teratas selain kursus itu sendiri. <br>
+
+Berikut merupakan hasil Top 5 rekomendasi kursus yang relevan berdasarkan isi materi dan kesamaan fitur deskriptif `Finance for Managers`, yang berarti merekomendasikan kursus lain yang mirip dengan kursus berjudul `Finance for Managers`. 
+
+![Hasil Top 5 Recommendation](top5_recommendation.png)
 
 **Kelebihan :** 
 1. Pendekatan content-based hanya bergantung pada deskripsi fitur item seperti Course Name, Description, Skills, dan Difficulty Level, sehingga tetap bisa bekerja walau data interaksi pengguna (seperti rating eksplisit atau riwayat kursus yang diambil) tidak tersedia.
